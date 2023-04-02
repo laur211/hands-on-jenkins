@@ -26,7 +26,7 @@ pipeline {
 		}
 
 		stage("Test - UAT Dev") {
-			steps { runUAT(8888) }
+			steps { runUAT(5000) }
 		}
 
 		stage("Deploy - Stage") {
