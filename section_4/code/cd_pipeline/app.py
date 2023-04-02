@@ -25,4 +25,4 @@ def index():
     return render_template('index.html', url=url)
 
 if __name__ == "__main__":
-    app.run(host="172.18.0.3")
+    app.run(host="localhost")
