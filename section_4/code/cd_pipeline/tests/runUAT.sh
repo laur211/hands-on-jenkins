@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # set variables
-hostname='localhost'
+hostname='172.18.0.3'
 port=$1
 
 # wait for the app to start
