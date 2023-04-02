@@ -9,7 +9,7 @@ sleep 5
 
 # ping the app
 status_code=$(curl --write-out %{http_code} --silent http://${hostname}:${port})
-echo status_code
+echo $status_code
 
 if [ $status_code == 200 ];
 then
