@@ -8,7 +8,7 @@ port=$1
 sleep 5 
 
 # ping the app
-status_code=$(curl -s -o -w %{http_code} ${hostname}:${port})
+status_code=$(curl -s -w %{http_code} ${hostname}:${port})
 echo $status_code
 
 if [ $status_code == 200 ];
