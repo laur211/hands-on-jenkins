@@ -26,7 +26,7 @@ pipeline {
 		}
 
 		stage("Test - UAT Dev") {
-			steps { runUAT(8888) }
+			steps { runUAT(5000) }
 		}
 
 		stage("Deploy - Stage") {
@@ -55,7 +55,7 @@ def deploy(environment) {
 
 	if ("${environment}" == 'dev') {
 		containerName = "app_dev"
-		port = "5000"
+		port = "8888"
 	} 
 	else if ("${environment}" == 'stage') {
 		containerName = "app_stage"
